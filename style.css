@@ -1,0 +1,246 @@
+/*======== Configurações Gerais =======*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --hue: 23;
+  --bg-body: hsl(225, 4%, 39%);
+  --bg-portifolio: hsl(0, 0%, 8%);
+  --bg-portifolio2: hsl(220, 3%, 21%);
+
+  font-size: 62.5%;
+}
+
+body {
+  
+  font-family: 'Poppins', sans-serif;
+
+  background: var(--bg-body);
+  
+  width: 32rem;
+  margin: 0 auto;
+
+}
+
+ul li {
+  list-style: none;
+}
+
+.container{
+  width: 32rem;
+  background: var(--bg-portifolio);
+}
+
+svg path {
+  fill: #FFFFFF;
+}
+
+h2{
+  font-size: 2.4rem;
+  color: #FFFFFF;
+  margin: 5rem 3rem 3rem;
+}
+
+p{
+  color: #FFFFFF;
+}
+
+span{
+  font-size: 1.6rem;
+  color: #FFFFFF;
+}
+
+.divider-1 {
+  height: 0.2rem;
+
+  background: linear-gradient(270deg, hsla(var(--hue), 98%, 55%, 0.34) 0%, hsla(var(--hue), 98%, 55%, 1) 100%);
+}
+
+.divider-2 {
+  height: 0.2rem;
+
+  background: linear-gradient(270deg, hsla(var(--hue), 98%, 55%, 1) 0%, hsla(var(--hue), 98%, 55%, 0.35) 100%);
+}
+
+
+/*======= Profile =======*/
+
+/*-------- Nav ----------*/
+
+.headerNav{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.headerNav nav{
+  display: flex;
+}
+
+.active:hover path {
+  fill: #fd721c;
+}
+
+.logoSimple img{
+  width: 6rem;
+  padding: 8px 0 8px 8px;
+}
+
+nav{
+  width: 100%;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+
+  width: 100%;
+}
+
+/* ----------- Photo ------------*/
+
+.profilePhoto{
+  position: relative;
+}
+
+#profilePhoto{
+  width: 32rem;
+}
+
+#nameFunction{
+  position: absolute;
+  bottom: 2rem;
+  left: 18%;
+  width: 20rem;
+}
+
+/*------------ About -----------*/
+
+h4{
+  color: #fd731e;
+  font-size: 1.39rem;
+  margin: 0 3rem 3rem;
+}
+
+h4 span{
+  color: var(--bg-body);
+  font-style: italic;
+  font-size: 1.4rem;
+}
+
+p{
+  color: #FFFFFF;
+  margin: 0 3rem;
+}
+
+
+/*======= Main =======*/
+
+
+/* -=-=-=-=-= Skills =-=-=-=-=- */
+
+.containerSkills{
+  width: 32rem;
+  display: flex;
+  margin-bottom: 5rem;
+}
+
+.showMe {
+  padding: 18px;
+  display: none;
+  overflow: hidden;
+  color: #ffffff;
+}
+
+.active, .skill:hover{
+  background-color: var(--bg-portifolio2);
+}
+
+.skill{
+  width: 16rem;
+  cursor: pointer;
+
+  padding: 3rem;
+  background-color: transparent;
+  border: 1px solid #fd731e;
+  border-radius: 1rem;
+
+  outline: none;
+  transition: 0.4s;
+}
+
+/*----------- HardSkills --------*/
+
+
+.hardSkills:hover{
+  background-color: var(--bg-portifolio2);
+}
+
+
+/*----------- SoftSkills --------*/
+
+.softSkills:hover{
+  background-color: var(--bg-portifolio2);
+}
+
+/* -=-=-=-=-= Portfolio =-=-=-=-=- */
+
+.portfolio{
+  width: 100%;
+  height: 50vh;
+}
+
+.buttonPortfolio{
+  width: 100%;
+
+  border: 1px solid #fd731e;
+  border-radius: 1rem;
+
+  padding: 3rem;
+}
+
+/*============= Footer ============*/
+.logo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem;
+}
+.logo img{
+  width: 20rem;
+  display: flex;
+  padding-top: 5rem;
+}
+
+.social h2{
+  display: flex;
+}
+
+.footerEnd h5{
+  text-align: center;
+  padding: 6rem;
+  color: #FFFFFF;
+}
+
+.socialLinks{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.socialLinks ul{
+  display: flex;
+  gap: 2rem;
+
+  padding-top: 5rem;
+}
+
+.social .socialLinks svg{
+  width: 3rem;
+}
+
